@@ -13,7 +13,7 @@ Compagino la gestión técnica en entornos de producción con el desarrollo estr
 
 ## 🗣️ Idiomas
 * **Español:** Nativo.
-* **Inglés:** B2 (Intermedio alto).
+* **Inglés:** B2 (Intermedio)
 
 ## 🔗 Enlaces
 * **Portafolio:** [miguelsb-dev.github.io](https://miguelsb-dev.github.io/)
