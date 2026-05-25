@@ -11,9 +11,13 @@ Compagino la gestión técnica en entornos de producción con el desarrollo estr
 * **Sistemas/DevOps:** Docker, PowerShell, Azure, Git.
 * **Bases de Datos:** SQL Server, MySQL, PostgreSQL.
 
-## 🌐 Enlaces
+## 🗣️ Idiomas
+* **Español:** Nativo.
+* **Inglés:** B2 (Intermedio alto).
+
+## 🔗 Enlaces
 * **Portafolio:** [miguelsb-dev.github.io](https://miguelsb-dev.github.io/)
 * **LinkedIn:** [Perfil de LinkedIn](https://www.linkedin.com/in/miguel-soto-blanco-5b3599269/)
 
 ---
-*¿Interesado en mi trabajo? ¡No dudes en contactarme por email!*
+*¿Interesado en mi trabajo? [Contáctame por email](mailto:xMiguelSBx@gmail.com)!*
