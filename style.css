@@ -386,7 +386,6 @@ body {
     cursor: pointer;
 }
 
-/* Modificado para mantener fijo el Oro Champán premium sin importar el tema activo */
 .btn-primary {
     background-color: #dfc59f !important; 
     color: #0a0e14 !important;
