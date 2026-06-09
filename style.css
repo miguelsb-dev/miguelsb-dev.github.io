@@ -234,6 +234,7 @@ body {
 .projects-grid {
     display: grid;
     grid-template-columns: 1fr;
+    gap: 2rem; /* Añadido espacio controlado entre tarjetas */
     max-width: 650px;
 }
 
@@ -295,7 +296,7 @@ body {
     background-color: rgba(0, 0, 0, 0.15);
     border-top: 1px solid var(--border-color);
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Adaptación flexible para 1 o más botones */
     gap: 1rem;
 }
 
