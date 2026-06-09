@@ -235,16 +235,15 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
-    max-width: 100%; /* Eliminado el límite estrecho para usar todo el ancho */
+    max-width: 100%;
 }
 
 @media (min-width: 768px) {
     .projects-grid {
-        grid-template-columns: repeat(2, 1fr); /* Dos rectángulos en horizontal */
+        grid-template-columns: repeat(2, 1fr);
         gap: 1.75rem;
     }
 
-    /* Hace que el 5º proyecto (impar) cierre la rejilla centrada y estéticamente extendida */
     .project-card:nth-child(5) {
         grid-column: span 2;
     }
@@ -387,13 +386,14 @@ body {
     cursor: pointer;
 }
 
+/* Modificado para mantener fijo el Oro Champán premium sin importar el tema activo */
 .btn-primary {
-    background-color: var(--accent);
-    color: #0a0a0c;
+    background-color: #dfc59f !important; 
+    color: #0a0e14 !important;
 }
 
 .btn-primary:hover {
-    background-color: var(--accent-hover);
+    background-color: #f1e2cc !important;
 }
 
 .btn-secondary {
