@@ -17,6 +17,6 @@ Compagino la gestión técnica en entornos de producción con el desarrollo estr
 
 ## 🔗 Enlaces
 * **Portafolio:** [miguelsb-dev.github.io](https://miguelsb-dev.github.io/)
-* 
+  
 ---
 *¿Interesado en mi trabajo? [Contáctame por email](mailto:xMiguelSBx@gmail.com)!*
