@@ -17,7 +17,6 @@ Compagino la gestión técnica en entornos de producción con el desarrollo estr
 
 ## 🔗 Enlaces
 * **Portafolio:** [miguelsb-dev.github.io](https://miguelsb-dev.github.io/)
-* **LinkedIn:** [Perfil de LinkedIn](https://www.linkedin.com/in/miguel-soto-blanco-5b3599269/)
-
+* 
 ---
 *¿Interesado en mi trabajo? [Contáctame por email](mailto:xMiguelSBx@gmail.com)!*
