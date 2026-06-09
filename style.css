@@ -230,12 +230,24 @@ body {
     margin-right: 0.5rem;
 }
 
-/* Tarjeta Única de Proyectos */
+/* Rejilla Estructurada de Proyectos (2 Columnas Horizontales) */
 .projects-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2rem; /* Añadido espacio controlado entre tarjetas */
-    max-width: 650px;
+    gap: 1.5rem;
+    max-width: 100%; /* Eliminado el límite estrecho para usar todo el ancho */
+}
+
+@media (min-width: 768px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr); /* Dos rectángulos en horizontal */
+        gap: 1.75rem;
+    }
+
+    /* Hace que el 5º proyecto (impar) cierre la rejilla centrada y estéticamente extendida */
+    .project-card:nth-child(5) {
+        grid-column: span 2;
+    }
 }
 
 .project-card {
@@ -246,6 +258,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
+    transition: border-color var(--transition-speed);
 }
 
 .project-card:hover {
@@ -296,7 +309,7 @@ body {
     background-color: rgba(0, 0, 0, 0.15);
     border-top: 1px solid var(--border-color);
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Adaptación flexible para 1 o más botones */
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 1rem;
 }
 
