@@ -3,180 +3,236 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miguel Soto Blanco | Desarrollador Backend & Sistemas</title>
-    <meta name="description" content="Portafolio profesional de Miguel Soto Blanco, Desarrollador Backend y Sistemas.">
+    <title>Miguel Soto Blanco | Desarrollador de Software · Agentes IA y Automatización</title>
+    <meta name="description" content="Miguel Soto Blanco, desarrollador de software especializado en agentes de IA, CRMs, paneles de analítica y herramientas a medida para empresas.">
+    <meta name="theme-color" content="#0a0e14">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a0e14'/%3E%3Ctext x='32' y='42' font-size='28' font-family='Arial' font-weight='700' text-anchor='middle' fill='%23dfc59f'%3EMSB%3C/text%3E%3C/svg%3E">
+    <script>
+        try {
+            var t = localStorage.getItem('portfolio-theme');
+            if (t === 'light' || (!t && window.matchMedia('(prefers-color-scheme: light)').matches)) {
+                document.documentElement.setAttribute('data-theme', 'light');
+            }
+        } catch (e) {}
+    </script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <a class="skip-link" href="#about">Saltar al contenido</a>
     <header class="site-header">
         <div class="header-container">
             <div class="header-brand">
                 <button id="profile-btn" class="profile-img-btn" aria-label="Ver foto de perfil ampliada">
-                    <img src="https://github.com/miguelsb-dev.png" alt="Miguel Soto Blanco" class="profile-img" onerror="this.style.display='none'">
+                    <img src="https://github.com/miguelsb-dev.png" alt="Miguel Soto Blanco" class="profile-img">
                 </button>
                 <div>
                     <h1>Miguel Soto Blanco</h1>
-                    <p class="role">Desarrollador Backend & Sistemas</p>
-                    <p class="location">
-                        <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                        Algeciras, Cádiz (España)
-                    </p>
+                    <p class="role">Desarrollador de Software · IA y Automatización</p>
+                    <p class="location">Algeciras, Cádiz (España)</p>
                 </div>
             </div>
-            <nav class="header-nav" aria-label="Contacto y configuración">
-                <a href="https://github.com/miguelsb-dev" target="_blank" rel="noopener noreferrer" class="nav-link">
-                    <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                    <span>GitHub</span>
-                </a>
-                <a href="https://linkedin.com/in/miguel-soto-blanco-5b3599269/" target="_blank" rel="noopener noreferrer" class="nav-link">
-                    <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                    <span>LinkedIn</span>
-                </a>
-                <a href="mailto:xMiguelSBx@gmail.com" class="nav-link">
-                    <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                    <span>Email</span>
-                </a>
-                <button id="theme-toggle" class="theme-btn" aria-label="Cambiar tema visual">
-                    <svg class="sun-icon" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.22" x2="5.64" y2="17.78"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-                    <svg class="moon-icon" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-                </button>
+            <nav class="header-nav" aria-label="Navegación y contacto">
+                <a href="#experience" class="nav-link nav-anchor">Experiencia</a>
+                <a href="#skills" class="nav-link nav-anchor">Habilidades</a>
+                <a href="#projects" class="nav-link nav-anchor">Proyectos</a>
+                <a href="https://github.com/miguelsb-dev" target="_blank" rel="noopener noreferrer" class="nav-link">GitHub</a>
+                <a href="https://linkedin.com/in/miguel-soto-blanco-5b3599269/" target="_blank" rel="noopener noreferrer" class="nav-link">LinkedIn</a>
+                <a href="mailto:xMiguelSBx@gmail.com" class="nav-link">Email</a>
+                <button id="theme-toggle" class="theme-btn" aria-label="Cambiar tema visual" title="Cambiar tema">◐</button>
             </nav>
         </div>
     </header>
 
     <main class="main-container">
         <section class="section" id="about" aria-labelledby="about-title">
-            <h2 id="about-title" class="section-title">Enfoque Técnico</h2>
+            <h2 id="about-title" class="section-title">Enfoque</h2>
             <p class="about-text">
-                Desarrollador enfocado en el diseño e implementación de lógica backend, automatización de infraestructura y optimización de bases de datos relacionales. Compagino la gestión técnica en entornos de producción con el desarrollo estructurado de soluciones escalables, priorizando la seguridad, el rendimiento del código y la resolución directa de problemas de negocio bajo arquitecturas limpias.
+                Desarrollo software que resuelve problemas reales de negocio: agentes de IA, CRMs, paneles de analítica y herramientas internas a medida. Trabajo de principio a fin, desde entender la necesidad hasta desplegarla y mantenerla en producción, con la seguridad y el rendimiento como requisitos desde el primer día.
             </p>
         </section>
 
-        <section class="section" id="stack" aria-labelledby="stack-title">
-            <h2 id="stack-title" class="section-title">Ecosistema Tecnológico</h2>
-            <div class="stack-grid">
-                <div class="stack-card">
-                    <h3>Backend & Lenguajes</h3>
-                    <ul class="stack-list">
-                        <li>Java (Spring Boot, JPA, Hibernate)</li>
-                        <li>C# / .NET (.NET Core, Entity Framework)</li>
-                        <li>PHP</li>
-                        <li>JavaScript (ES6+)</li>
+        <section class="section" id="experience" aria-labelledby="exp-title">
+            <h2 id="exp-title" class="section-title">Experiencia</h2>
+            <div class="exp-list">
+                <article class="exp-card">
+                    <div class="exp-head">
+                        <h3>Desarrollador de software</h3>
+                        <span class="exp-date">Ago 2026 – Actualidad</span>
+                    </div>
+                    <p class="exp-company">Empresa tecnológica de soluciones de IA para empresas</p>
+                    <ul class="exp-bullets">
+                        <li>Diseño y despliegue de agentes de IA especializados, integrados en los flujos de trabajo reales de empresas cliente.</li>
+                        <li>Desarrollo de herramientas internas a medida: CRM, gestión de tareas y gestión segura de credenciales.</li>
+                        <li>Paneles de analítica conectados a Google Analytics y Search Console para leads y marketing.</li>
+                        <li>Integración de modelos de lenguaje (LLMs) en automatizaciones, SEO y embudos de venta.</li>
                     </ul>
-                </div>
-                <div class="stack-card">
-                    <h3>Sistemas & DevOps</h3>
-                    <ul class="stack-list">
-                        <li>Docker & Docker Compose</li>
-                        <li>PowerShell scripting & Hardening de sistemas</li>
-                        <li>Microsoft Azure Fundamentals</li>
-                        <li>Git / GitHub (Flujos Branching)</li>
+                </article>
+                <article class="exp-card">
+                    <div class="exp-head">
+                        <h3>Prácticas en desarrollo web y sistemas</h3>
+                        <span class="exp-date">Mar – Jun 2026</span>
+                    </div>
+                    <p class="exp-company">Agencia Hawkins</p>
+                    <ul class="exp-bullets">
+                        <li>Gestión de servidores, despliegues con Docker y optimización de bases de datos.</li>
                     </ul>
-                </div>
-                <div class="stack-card">
-                    <h3>Bases de Datos & Web</h3>
-                    <ul class="stack-list">
-                        <li>SQL Server</li>
-                        <li>MySQL / PostgreSQL</li>
-                        <li>HTML5 / CSS3 Semántico</li>
-                        <li>REST APIs / Autenticación JWT</li>
-                    </ul>
-                </div>
+                </article>
             </div>
         </section>
 
+        <section class="section" id="skills" aria-labelledby="skills-title">
+            <h2 id="skills-title" class="section-title">Habilidades</h2>
+            <div class="stack-grid">
+                <div class="stack-card">
+                    <h3>IA y automatización</h3>
+                    <ul class="stack-list">
+                        <li>Diseño de agentes de IA</li>
+                        <li>Integración de LLMs multi-proveedor</li>
+                        <li>Orquestación con Langflow</li>
+                        <li>Automatización de procesos</li>
+                    </ul>
+                </div>
+                <div class="stack-card">
+                    <h3>Backend y lenguajes</h3>
+                    <ul class="stack-list">
+                        <li>PHP / Laravel</li>
+                        <li>C# / .NET</li>
+                        <li>Java (Spring Boot)</li>
+                        <li>JavaScript (ES6+) y Python</li>
+                    </ul>
+                </div>
+                <div class="stack-card">
+                    <h3>Datos y analítica</h3>
+                    <ul class="stack-list">
+                        <li>Google Analytics y Search Console</li>
+                        <li>MySQL, PostgreSQL, SQL Server</li>
+                        <li>REST APIs y autenticación JWT</li>
+                    </ul>
+                </div>
+                <div class="stack-card">
+                    <h3>Infraestructura y calidad</h3>
+                    <ul class="stack-list">
+                        <li>Docker y Docker Compose</li>
+                        <li>Git / GitHub (flujos con ramas)</li>
+                        <li>PowerShell y hardening de sistemas</li>
+                        <li>Microsoft Azure Fundamentals</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="tools-label">Herramientas del día a día</p>
+            <ul class="chip-list" aria-label="Herramientas">
+                <li>Cursor</li><li>LiteLLM</li><li>Electron</li><li>Tailwind CSS</li><li>Hostinger</li><li>AWS</li>
+            </ul>
+        </section>
+
         <section class="section" id="projects" aria-labelledby="projects-title">
-            <h2 id="projects-title" class="section-title">Proyectos Desarrollados</h2>
+            <h2 id="projects-title" class="section-title">Proyectos</h2>
+
+            <h3 class="subsection-title">Profesionales <span>privados, sin demo pública</span></h3>
             <div class="projects-grid">
-                
                 <article class="project-card">
                     <div class="project-content">
-                        <span class="project-tag">Desarrollo Full-Stack / Base de Datos</span>
-                        <h3>Catálogo Dinámico de Perfumería & Gestión Relacional</h3>
-                        <p class="project-description">
-                            Aplicación web dedicada a la indexación, persistencia y filtrado avanzado de productos relacionales. Resuelve de forma segura el control de accesos mediante un sistema completo de registro y autenticación de usuarios con cifrado de contraseñas, gestionando de forma eficiente los estados y sesiones en el servidor sin dependencias externas.
-                        </p>
-                        <div class="project-tech-used">
-                            <span>PHP v8</span><span>MySQL</span><span>Autenticación</span><span>Gestión de Sesiones</span><span>SQL Relacional</span>
-                        </div>
-                    </div>
-                    <div class="project-actions">
-                        <a href="https://github.com/miguelsb-dev" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Ver Código</a>
-                        <a href="https://biblioteca-perfumes.infinityfreeapp.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Demo Funcional</a>
+                        <span class="project-tag">Seguridad</span>
+                        <h3>Gestor de contraseñas privado</h3>
+                        <p class="project-description">Gestor de credenciales de uso interno que funciona en local, sin depender de servicios de terceros. Centraliza los accesos del equipo bajo el control total de la empresa.</p>
+                        <div class="project-tech-used"><span>Entorno local</span><span>Seguridad</span><span>Uso interno</span></div>
                     </div>
                 </article>
-
                 <article class="project-card">
                     <div class="project-content">
-                        <span class="project-tag">Arquitectura Cliente / Gestión Cuantitativa</span>
-                        <h3>Ciras FC - Plataforma de Gestión Deportiva & Pizarra Interactiva</h3>
-                        <p class="project-description">
-                            Aplicación web concebida para la optimización y balanceo competitivo de encuentros deportivos de comunidad. Implementa una pizarra táctica 5v5 capaz de computar valoraciones globales de equipo (OVR) en tiempo real, un gestor algorítmico de perfiles estadísticos estilo carta y almacenamiento local aislado en navegador sin servidores de base de datos externos.
-                        </p>
-                        <div class="project-tech-used">
-                            <span>JavaScript ES6+</span><span>localStorage API</span><span>TailwindCSS</span><span>Cálculo en Caliente</span>
-                        </div>
-                    </div>
-                    <div class="project-actions">
-                        <a href="https://github.com/miguelsb-dev/web-futbol" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Ver Código</a>
-                        <a href="https://ciras-futbol.infinityfreeapp.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Demo Funcional</a>
+                        <span class="project-tag">Productividad</span>
+                        <h3>Plataforma de gestión de tareas</h3>
+                        <p class="project-description">Alternativa a las herramientas genéricas de gestión de proyectos, con flujos, vistas y permisos adaptados a cómo trabaja la empresa, en lugar de adaptar el equipo a la herramienta.</p>
+                        <div class="project-tech-used"><span>Aplicación web</span><span>A medida</span><span>Uso interno</span></div>
                     </div>
                 </article>
-
                 <article class="project-card">
                     <div class="project-content">
-                        <span class="project-tag">Desarrollo de Escritorio / Almacenamiento Local</span>
-                        <h3>Prelude - Bóveda Musical de Escritorio & Gestor Relacional</h3>
-                        <p class="project-description">
-                            Reproductor e indexador de archivos de audio local diseñado bajo una arquitectura aislada de alto rendimiento. Integra un motor embebido para la manipulación persistente de metadatos, portadas de álbumes y líricas, enlazado a una interfaz de escritorio fluida de ventana nativa con soporte drag-and-drop y control adaptativo de variables CSS.
-                        </p>
-                        <div class="project-tech-used">
-                            <span>Python 3</span><span>SQLite3</span><span>pywebview</span><span>TailwindCSS</span><span>JS Vanilla</span>
-                        </div>
-                    </div>
-                    <div class="project-actions">
-                        <a href="https://github.com/miguelsb-dev/prelude-app" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Ver Código</a>
-                        <a href="https://github.com/miguelsb-dev/prelude-app/releases" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Demo Funcional</a>
+                        <span class="project-tag">Analítica</span>
+                        <h3>Dashboard de marketing y leads</h3>
+                        <p class="project-description">Panel conectado a Google Analytics y Search Console que reúne visitas, búsquedas y leads en un solo sitio, para analizar el rendimiento y cada movimiento de los usuarios.</p>
+                        <div class="project-tech-used"><span>Google Analytics</span><span>Search Console</span><span>Leads</span></div>
                     </div>
                 </article>
-
                 <article class="project-card">
                     <div class="project-content">
-                        <span class="project-tag">En Desarrollo / Sistemas Complejos</span>
-                        <h3>Ecosistema Web Integral para Servidor de Minecraft</h3>
-                        <p class="project-description">
-                            Plataforma backend en sincronización directa con las bases de datos de un entorno de juego activo. Integrará módulos de persistencia de jugadores, minijuegos web interactivos, pasarela de compraventa con moneda virtual securizada, portal centralizado de noticias y un launcher de escritorio personalizado.
-                        </p>
-                        <div class="project-tech-used">
-                            <span>Java</span><span>SQL Server</span><span>Docker Compose</span><span>WebSockets</span><span>Launcher a Medida</span>
-                        </div>
-                    </div>
-                    <div class="project-actions">
-                        <span class="btn btn-secondary" style="cursor: not-allowed; opacity: 0.6;">Fase de Infraestructura</span>
+                        <span class="project-tag">IA y CRM</span>
+                        <h3>CRM con agentes de IA</h3>
+                        <p class="project-description">CRM propio integrado en la plataforma de la empresa. Los agentes de IA automatizan los procesos repetitivos del día a día del equipo.</p>
+                        <div class="project-tech-used"><span>CRM</span><span>Agentes IA</span><span>Automatización</span></div>
                     </div>
                 </article>
-
                 <article class="project-card">
                     <div class="project-content">
-                        <span class="project-tag">En Desarrollo / Catálogo Dinámico</span>
-                        <h3>Plataforma de Indexación & Filtrado de Videojuegos</h3>
-                        <p class="project-description">
-                            Sistema dinámico enfocado en el almacenamiento relacional, clasificación multidimensional y búsqueda avanzada de títulos multimedia. Evolución directa del motor de perfumería, integrando consumo asíncrono de APIs REST de terceros y capas avanzadas de caché en servidor.
-                        </p>
-                        <div class="project-tech-used">
-                            <span>PHP v8</span><span>PostgreSQL</span><span>REST APIs</span><span>Estrategias de Caché</span>
-                        </div>
-                    </div>
-                    <div class="project-actions">
-                        <span class="btn btn-secondary" style="cursor: not-allowed; opacity: 0.6;">Fase de Modelado BDD</span>
+                        <span class="project-tag">Inteligencia artificial</span>
+                        <h3>Agentes de IA para empresas</h3>
+                        <p class="project-description">Agentes especializados (redactor, gestor documental, asistente legal) que se integran en los flujos reales de cada cliente y asumen tareas operativas.</p>
+                        <div class="project-tech-used"><span>LLMs</span><span>Agentes</span><span>Integración</span></div>
                     </div>
                 </article>
+            </div>
 
+            <h3 class="subsection-title">Personales <span>código y demos públicos</span></h3>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-content">
+                        <span class="project-tag">Full-stack</span>
+                        <h3>Catálogo de perfumería con gestión relacional</h3>
+                        <p class="project-description">Catálogo web con filtrado avanzado de productos, registro y autenticación de usuarios con contraseñas cifradas y gestión de sesiones en servidor.</p>
+                        <div class="project-tech-used"><span>PHP 8</span><span>MySQL</span><span>Autenticación</span><span>Sesiones</span></div>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/miguelsb-dev" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Ver código</a>
+                        <a href="https://biblioteca-perfumes.infinityfreeapp.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Ver demo</a>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-content">
+                        <span class="project-tag">Aplicación web</span>
+                        <h3>Ciras FC: gestión deportiva y pizarra táctica</h3>
+                        <p class="project-description">Organiza partidos de fútbol amateur y equilibra los equipos: pizarra 5v5 con valoración global (OVR) en tiempo real y fichas de jugador estilo carta. Guarda los datos en el navegador, sin servidor.</p>
+                        <div class="project-tech-used"><span>JavaScript ES6+</span><span>localStorage</span><span>Tailwind CSS</span></div>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/miguelsb-dev/web-futbol" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Ver código</a>
+                        <a href="https://ciras-futbol.infinityfreeapp.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Ver demo</a>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-content">
+                        <span class="project-tag">Escritorio</span>
+                        <h3>Prelude: reproductor y biblioteca musical</h3>
+                        <p class="project-description">Reproductor de audio local con base de datos embebida para metadatos, portadas y letras. Ventana nativa con arrastrar y soltar, y tema claro y oscuro.</p>
+                        <div class="project-tech-used"><span>Python 3</span><span>SQLite</span><span>pywebview</span><span>Tailwind CSS</span></div>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/miguelsb-dev/prelude-app" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Ver código</a>
+                        <a href="https://github.com/miguelsb-dev/prelude-app/releases" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Descargar</a>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-content">
+                        <span class="project-tag">En desarrollo</span>
+                        <h3>Ecosistema web para servidor de Minecraft</h3>
+                        <p class="project-description">Plataforma conectada a las bases de datos de un servidor activo: perfiles de jugadores, minijuegos web, tienda con moneda virtual, noticias y launcher propio.</p>
+                        <div class="project-tech-used"><span>Java</span><span>SQL Server</span><span>Docker Compose</span><span>WebSockets</span></div>
+                    </div>
+                    <div class="project-actions"><span class="btn btn-disabled">Fase de infraestructura</span></div>
+                </article>
+                <article class="project-card">
+                    <div class="project-content">
+                        <span class="project-tag">En desarrollo</span>
+                        <h3>Catálogo y buscador de videojuegos</h3>
+                        <p class="project-description">Evolución del catálogo de perfumería: clasificación multidimensional, búsqueda avanzada, consumo de APIs REST de terceros y caché en servidor.</p>
+                        <div class="project-tech-used"><span>PHP 8</span><span>PostgreSQL</span><span>REST APIs</span><span>Caché</span></div>
+                    </div>
+                    <div class="project-actions"><span class="btn btn-disabled">Fase de modelado de datos</span></div>
+                </article>
             </div>
         </section>
     </main>
 
-    <div id="photo-modal" class="modal" aria-hidden="true" role="dialog">
+    <div id="photo-modal" class="modal" aria-hidden="true" role="dialog" aria-label="Foto de perfil">
         <div class="modal-overlay"></div>
         <div class="modal-content">
             <button id="modal-close" class="modal-close-btn" aria-label="Cerrar imagen">&times;</button>
@@ -185,9 +241,10 @@
     </div>
 
     <footer class="site-footer">
-        <p>&copy; <span id="current-year"></span> Miguel Soto Blanco. Diseñado con enfoque en rendimiento y accesibilidad nativa.</p>
+        <p>&copy; <span id="current-year"></span> Miguel Soto Blanco</p>
     </footer>
 
     <script src="app.js"></script>
 </body>
 </html>
+
