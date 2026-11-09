@@ -38,7 +38,7 @@ Desarrollador de software en **GBD Studios · Arkaiu**. Construyo agentes de IA 
 * **IA y automatización:** agentes de IA, integración de LLMs
 * **Backend:** PHP / Laravel, C# / .NET, Java (Spring Boot), JavaScript, Python
 * **APIs y datos:** REST, JWT, MySQL, PostgreSQL, SQL Server
-* **Sistemas y despliegue:** Docker, Git, Linux (nivel usuario), PowerShell, Azure
+* **Sistemas y despliegue:** Docker, Git, Linux, PowerShell, Azure
 * **Herramientas:** Cursor, Claude Code, ChatGPT, AWS
 
 ## 🚀 Proyectos personales
