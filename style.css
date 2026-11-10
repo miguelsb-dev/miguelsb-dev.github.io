@@ -1,4 +1,5 @@
-:root {
+:root,
+html[data-theme="light"] {
   color-scheme: light;
   --bg: #f4efe6;
   --ink: #1c2430;
@@ -14,7 +15,7 @@
   --display: "Fraunces", Georgia, serif;
 }
 
-[data-theme="dark"] {
+html[data-theme="dark"] {
   color-scheme: dark;
   --bg: #141922;
   --ink: #f3eee4;

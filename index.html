@@ -13,8 +13,11 @@
   <script>
     try {
       var t = localStorage.getItem("portfolio-theme");
-      var dark = t === "dark" || (!t && window.matchMedia("(prefers-color-scheme: dark)").matches);
-      if (dark) document.documentElement.setAttribute("data-theme", "dark");
+      var theme = t === "light" || t === "dark"
+        ? t
+        : (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme);
+      document.documentElement.style.colorScheme = theme;
     } catch (e) {}
   </script>
 </head>

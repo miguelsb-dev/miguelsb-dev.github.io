@@ -1,57 +1,72 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const root = document.documentElement;
- 
-    // 1. Tema claro/oscuro (respeta la preferencia del sistema la primera vez)
-    const themeToggle = document.getElementById('theme-toggle');
-    if (themeToggle) {
-        themeToggle.addEventListener('click', () => {
-            const toLight = root.getAttribute('data-theme') !== 'light';
-            if (toLight) root.setAttribute('data-theme', 'light');
-            else root.removeAttribute('data-theme');
-            try { localStorage.setItem('portfolio-theme', toLight ? 'light' : 'dark'); } catch (e) {}
-        });
-    }
- 
-    // 2. Foto de perfil: si no carga, se muestran las iniciales
-    const profileImg = document.querySelector('.profile-img');
-    if (profileImg) {
-        const showFallback = () => {
-            const fallback = document.createElement('span');
-            fallback.className = 'avatar-fallback';
-            fallback.textContent = 'MSB';
-            profileImg.replaceWith(fallback);
-        };
-        if (profileImg.complete && profileImg.naturalWidth === 0) showFallback();
-        else profileImg.addEventListener('error', showFallback);
-    }
- 
-    // 3. Foto ampliada (se cierra con clic fuera, con la X o con Escape)
-    const profileBtn = document.getElementById('profile-btn');
-    const photoModal = document.getElementById('photo-modal');
-    const modalClose = document.getElementById('modal-close');
- 
-    if (profileBtn && photoModal && modalClose) {
-        const openModal = () => {
-            photoModal.classList.add('open');
-            photoModal.setAttribute('aria-hidden', 'false');
-            modalClose.focus();
-        };
-        const closeModal = () => {
-            photoModal.classList.remove('open');
-            photoModal.setAttribute('aria-hidden', 'true');
-            profileBtn.focus();
-        };
- 
-        profileBtn.addEventListener('click', openModal);
-        modalClose.addEventListener('click', closeModal);
-        photoModal.querySelector('.modal-overlay').addEventListener('click', closeModal);
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape' && photoModal.classList.contains('open')) closeModal();
-        });
-    }
- 
-    // 4. Año del pie de página
-    const yearSpan = document.getElementById('current-year');
-    if (yearSpan) yearSpan.textContent = new Date().getFullYear();
-});
+(function () {
+  var root = document.documentElement;
+  var toggle = document.getElementById("theme-toggle");
+  var modal = document.getElementById("photo-modal");
+  var open = document.getElementById("photo-open");
+  var close = document.getElementById("photo-close");
+  var year = document.getElementById("year");
+  var lastToggle = 0;
 
+  if (year) year.textContent = String(new Date().getFullYear());
+
+  function savedTheme() {
+    try {
+      var stored = localStorage.getItem("portfolio-theme");
+      if (stored === "light" || stored === "dark") return stored;
+    } catch (e) {}
+    return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  }
+
+  function applyTheme(theme) {
+    root.setAttribute("data-theme", theme);
+    root.style.colorScheme = theme;
+    if (!toggle) return;
+    var dark = theme === "dark";
+    toggle.textContent = dark ? "☀" : "☾";
+    toggle.setAttribute("aria-label", dark ? "Activar tema claro" : "Activar tema oscuro");
+    toggle.title = dark ? "Tema claro" : "Tema oscuro";
+  }
+
+  function persist(theme) {
+    try {
+      localStorage.setItem("portfolio-theme", theme);
+    } catch (e) {}
+  }
+
+  applyTheme(savedTheme());
+
+  document.addEventListener("click", function (event) {
+    var target = event.target && event.target.closest ? event.target.closest("#theme-toggle") : null;
+    if (!target) return;
+    event.preventDefault();
+    var now = Date.now();
+    if (now - lastToggle < 400) return;
+    lastToggle = now;
+    var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+    applyTheme(next);
+    persist(next);
+  });
+
+  function showModal() {
+    if (!modal) return;
+    modal.hidden = false;
+    if (close) close.focus();
+  }
+
+  function hideModal() {
+    if (!modal) return;
+    modal.hidden = true;
+    if (open) open.focus();
+  }
+
+  if (open) open.addEventListener("click", showModal);
+  if (close) close.addEventListener("click", hideModal);
+  if (modal) {
+    modal.addEventListener("click", function (event) {
+      if (event.target.hasAttribute("data-close")) hideModal();
+    });
+  }
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape" && modal && !modal.hidden) hideModal();
+  });
+})();
